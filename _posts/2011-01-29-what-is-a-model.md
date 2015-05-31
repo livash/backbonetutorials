@@ -205,7 +205,7 @@ If we instantiate a model with an `id`, Backbone.js will automatically perform a
 {% highlight javascript %}
 
     // Here we have set the `id` of the model
-    var user = new Usermodel({id: 1});
+    var user = new UserModel({id: 1});
 
     // The fetch below will perform GET /user/1
     // The server should return the id, name and email from the database
@@ -225,7 +225,7 @@ We will use the `save` api call which is intelligent and will send a PUT request
 {% highlight javascript %}
 
     // Here we have set the `id` of the model
-    var user = new Usermodel({
+    var user = new UserModel({
         id: 1,
         name: 'Thomas',
         email: 'thomasalwyndavis@gmail.com'
@@ -250,7 +250,7 @@ When a model has an `id` we know that it exists on the server, so if we wish to 
 {% highlight javascript %}
 
     // Here we have set the `id` of the model
-    var user = new Usermodel({
+    var user = new UserModel({
         id: 1,
         name: 'Thomas',
         email: 'thomasalwyndavis@gmail.com'
