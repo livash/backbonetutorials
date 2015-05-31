@@ -237,6 +237,9 @@ We will use the `save` api call which is intelligent and will send a PUT request
     user.save({name: 'Davis'}, {
         success: function (model) {
             alert(user.toJSON());
+        },
+        error: function () {
+            alert('Oops, could not save the user ' + user.toJSON());
         }
     });
 
